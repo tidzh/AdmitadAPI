@@ -1,0 +1,23 @@
+{
+  "name": "ApiAdmitad",
+  "version": "1.1.0",
+  "description": "API Server for Admitad",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kondakov Alex",
+  "email" : "kondakov8@gmail.com",
+  "keywords": [
+    "Admitad",
+    "express",
+    "API"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {}
+}
