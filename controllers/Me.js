@@ -1,14 +1,10 @@
-const constants = require('../config');
-
 const express = require("express"),
-  router = express.Router();
-
-const AdmitadApi = require('../AdmitadApi');
-const api = new AdmitadApi(constants.client_id, constants.client_secret);
+  router = express.Router(),
+  admitadApi = require('../AdmitadApi');
 
 router.get('/me', (req, res) => {
   (async () => {
-	const profile = await api.getProfile();
+	const profile = await admitadApi.getProfile();
 	res.send(profile);
   })()
 });
